@@ -20,7 +20,7 @@ public class DataBaseConnection {
     public DataBaseConnection() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String dburl = "jdbc:mysql:localhost:3306/LockerDB";
+            String dburl = "rds-mysql-team-project.csexedpueeai.eu-west-1.rds.amazonaws.com:3306";
             String user = "student";
             String password = "student";
             connection = DriverManager.getConnection(dburl,user, password);
